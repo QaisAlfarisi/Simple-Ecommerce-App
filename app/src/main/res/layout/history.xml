@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#144272">
+
+    <TextView
+        android:id="@+id/history"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_bg1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="70dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="HISTORY"
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@+id/history"
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-15dp"
+        android:background="@color/blue"
+        app:itemIconTint="@drawable/bottom_navigation_icon_color"
+        app:menu="@menu/menu_fragment"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Location"
+    android:orientation="vertical"
+    android:background="#144272">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="645dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="250dp"
+            android:layout_height="55dp"
+            android:background="@drawable/custom_bg1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="OUTLET LOCATION"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yuk mampir ke outlet kita!"
+            android:layout_gravity="center"
+            android:layout_marginLeft="65dp"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="15dp"/>
+
+        <fragment
+            android:layout_width="375dp"
+            android:layout_height="510dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/map"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="-15dp"
+        android:background="@color/blue"
+        app:itemIconTint="@drawable/bottom_navigation_icon_color"
+        app:menu="@menu/menu_fragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</LinearLayout>

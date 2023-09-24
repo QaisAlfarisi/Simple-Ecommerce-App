@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_bg2">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="10dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/produk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/imageview"
+            android:textSize="20dp"
+            android:text="Qais"
+            android:layout_margin="2dp"/>
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/imageview"
+            android:layout_below="@id/produk"
+            android:textSize="15dp"
+            android:text="Tanggal Pembelian :  10 April 2022"
+            android:layout_margin="2dp"/>
+
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/imageview"
+            android:layout_below="@id/tanggal"
+            android:textSize="15dp"
+            android:text="Total Harga Rp 75.000"
+            android:layout_margin="2dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
